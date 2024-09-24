@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Techyjaunt Program | Assignment 3</title>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">aJay</div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <ul id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Video Background -->
+  <section class="hero">
+    <video src="/asset/videp.mp4" autoplay muted loop></video>
+    <div class="hero-content">
+      <h1>Welcome to aJay Website</h1>
+      <p>Discover the best solutions for your business, crafted with care and passion.</p>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+  <script>
+    // Toggle the navigation menu in mobile view
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
